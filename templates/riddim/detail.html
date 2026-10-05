@@ -5,4 +5,10 @@
     <p>{{ riddim.genre }}</p>
     <p>{{ riddim.date }}</p>
     <audio controls src="{{ riddim.audio_file.url }}"></audio>
+
+    <form action='{% url 'delete_riddim' riddim.id %}' method='post'>
+    {% csrf_token %}
+    <button type='submit'>Delete</button>
+    </form>
+
 {% endblock %}

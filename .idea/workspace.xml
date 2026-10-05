@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5bed401-c00b-489f-82b2-b1b163ffee06" name="Changes" comment="Initial Commit + list and detail templates (with audio)">
-      <change afterPath="$PROJECT_DIR$/templates/riddim/create.html" afterDir="false" />
+    <list default="true" id="e5bed401-c00b-489f-82b2-b1b163ffee06" name="Changes" comment="Add riddim create view and form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riddim/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/riddim/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riddim/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/riddim/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/riddim/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/riddim/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/riddim/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/riddim/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1791204713501</updated>
-      <workItem from="1791204714589" duration="3423000" />
+      <workItem from="1791204714589" duration="4965000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit + list and detail templates (with audio)">
       <option name="closed" value="true" />
@@ -120,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791206528191</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add riddim create view and form">
+      <option name="closed" value="true" />
+      <created>1791208211984</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791208211984</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit + list and detail templates (with audio)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit + list and detail templates (with audio)" />
+    <MESSAGE value="Add riddim create view and form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add riddim create view and form" />
   </component>
 </project>
