@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Riddims :</h1>
+    <ul>
+    {% for riddim in riddims %}
+    	<li>
+        <a href="{% url 'detail_riddim' riddim.id %}">{{ riddim.name }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
