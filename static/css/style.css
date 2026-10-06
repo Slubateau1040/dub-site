@@ -81,3 +81,44 @@ select, button {
     background-color: var(--green);
     color: var(--bg-dark);
 }
+
+.riddim-detail {
+    width: fit-content;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.riddim-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.riddim-actions a,
+.riddim-actions button {
+    font: inherit;
+    font-size: 14px;
+    background-color: var(--bg-card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.riddim-actions a:hover {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.riddim-actions button:hover {
+    border-color: var(--red);
+    background-color: var(--red);
+    color: var(--bg-dark);
+}

@@ -1,16 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{{ riddim.name }}</h1>
-    <p>{{ riddim.genre }}</p>
-    <p>{{ riddim.date }}</p>
-    <audio controls src="{{ riddim.audio_file.url }}"></audio>
+    <div class="riddim-detail">
+        <h1>{{ riddim.name }}</h1>
+        <p class="riddim-genre">{{ riddim.genre }}</p>
+        <p class="riddim-date">{{ riddim.date }}</p>
+        <audio controls src="{{ riddim.audio_file.url }}"></audio>
 
-    <form action='{% url 'delete_riddim' riddim.id %}' method='post'>
-    {% csrf_token %}
-    <button type='submit'>Delete</button>
-    </form>
+        <div class="riddim-actions">
+            <a href="{% url 'edit_riddim' riddim.id %}">Edit</a>
+            <form action='{% url 'delete_riddim' riddim.id %}' method='post'>
+                {% csrf_token %}
+                <button type='submit'>Delete</button>
+            </form>
 
-    <a href="{% url 'edit_riddim' riddim.id %}">Edit</a>
-
+        </div>
+    </div>
 {% endblock %}
