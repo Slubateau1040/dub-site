@@ -27,3 +27,15 @@ def delete_riddim(request, riddim_id):
     riddim = get_object_or_404(models.Riddim, pk=riddim_id)
     riddim.delete()
     return HttpResponseRedirect(reverse('list_riddim'))
+
+def edit_riddim(request, riddim_id):
+    riddim = get_object_or_404(models.Riddim, pk=riddim_id)
+    if request.method == 'POST':
+        riddim.name = request.POST['name']
+        riddim.genre = request.POST['genre']
+        if 'audio_file' in request.FILES:
+            riddim.audio_file = request.FILES['audio_file']
+        riddim.save()
+        return HttpResponseRedirect(reverse('list_riddim'))
+    else:
+        return render(request, 'riddim/edit.html', {'riddim': riddim})

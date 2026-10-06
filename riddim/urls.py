@@ -6,4 +6,5 @@ urlpatterns = [
     path('<int:riddim_id>/', views.detail_riddim, name='detail_riddim'),
     path('create/', views.create_riddim, name='create_riddim'),
     path('<int:riddim_id>/delete/', views.delete_riddim, name='delete_riddim'),
+    path('<int:riddim_id>/edit/', views.edit_riddim, name='edit_riddim'),
 ]
