@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>Riddims :</h1>
-    <form method="get">
+    <form method="get" class="filter-form">
         <select name="genre">
             <option value="">All genres</option>
             {% for genre in genre_list %}
@@ -11,14 +11,14 @@
         </select>
         <button type="submit">Filter</button>
     </form>
-    <ul>
-    {% for riddim in riddims %}
-    	<li>
-        <a href="{% url 'detail_riddim' riddim.id %}">{{ riddim.name }}</a>
-        </li>
-    {% endfor %}
-    </ul>
 
-    <a href="{% url 'create_riddim' %}">Create Riddim</a>
+    {% for riddim in riddims %}
+        <a href="{% url 'detail_riddim' riddim.id %}" class="riddim-card">
+            <span class="riddim-name">{{ riddim.name }}</span>
+            <span class="riddim-genre">{{ riddim.genre }}</span>
+        </a>
+    {% endfor %}
+
+    <a href="{% url 'create_riddim' %}" class="btn-create">Create Riddim</a>
 
 {% endblock %}
