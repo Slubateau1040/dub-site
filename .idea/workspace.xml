@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5bed401-c00b-489f-82b2-b1b163ffee06" name="Changes" comment="Style riddim list with dark palette, cards and create button">
+    <list default="true" id="e5bed401-c00b-489f-82b2-b1b163ffee06" name="Changes" comment="Style riddim detail page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/riddim/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/riddim/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/riddim/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/riddim/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/riddim/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/riddim/edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1791204713501</updated>
       <workItem from="1791204714589" duration="5087000" />
-      <workItem from="1791289973860" duration="9195000" />
+      <workItem from="1791289973860" duration="10617000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit + list and detail templates (with audio)">
       <option name="closed" value="true" />
@@ -163,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791300091505</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Style riddim detail page">
+      <option name="closed" value="true" />
+      <created>1791301516408</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1791301516408</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +182,7 @@
     <MESSAGE value="Add riddim edit view" />
     <MESSAGE value="Add riddim filtrage view" />
     <MESSAGE value="Style riddim list with dark palette, cards and create button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Style riddim list with dark palette, cards and create button" />
+    <MESSAGE value="Style riddim detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style riddim detail page" />
   </component>
 </project>

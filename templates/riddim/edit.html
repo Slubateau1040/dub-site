@@ -1,19 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
+    <form method="POST" enctype="multipart/form-data" class="riddim-form">
+        {% csrf_token %}
 
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" value="{{ riddim.name }}" required>
+        <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="{{ riddim.name }}" required>
+        </div>
 
-    <label for="genre">Genre</label>
-    <input type="text" name="genre" id="genre" value="{{ riddim.genre }}" required>
+        <div class="form-field">
+            <label for="genre">Genre</label>
+            <input type="text" name="genre" id="genre" value="{{ riddim.genre }}" required>
+        </div>
 
-    <label for="audio_file">Audio File</label>
-    <input type="file" name="audio_file" id="audio_file">
+        <div class="form-field">
+            <label for="audio_file">Audio File</label>
+            <input type="file" name="audio_file" id="audio_file">
+        </div>
 
-    <button type="submit">Submit</button>
-
+        <button type="submit">Submit</button>
     </form>
 {% endblock %}

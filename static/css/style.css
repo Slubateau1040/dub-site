@@ -122,3 +122,53 @@ select, button {
     background-color: var(--red);
     color: var(--bg-dark);
 }
+
+.riddim-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    color: var(--text-dim);
+}
+
+.form-field input[type="text"] {
+    background-color: var(--text);
+    border: 1px solid var(--border);
+    color: var(--bg);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-color: var(--yellow);
+}
+
+.riddim-form button {
+    background-color: var(--bg-card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.riddim-form button:hover {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
